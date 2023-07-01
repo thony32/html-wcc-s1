@@ -4,9 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Faritra Menabe</title>
+    <link rel="stylesheet" href="./assets/style.css" />
     <link rel="stylesheet" href="./dist/daisyUI.css" />
     <script src="./dist/tailwind.js"></script>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </head>
   <body class="h-[100vh]">
     <!-- panel 1 -->
@@ -17,13 +20,24 @@
     <!-- panel 2 -->
 
     <div class="absolute inset-0 flex items-center justify-center">
-      <img src="./img/33.png" alt="" class="w-full h-screen" />
+      <img
+        src="./img/33.png"
+        alt=""
+        class="w-full h-screen object-cover"
+        data-aos="flip-left"
+      />
     </div>
-    <div class="absolute inset-1/4 z-10">
-      <h1 class="font-bold text-4xl text-center" id="welcome"></h1>
+    <div class="flex flex-col gap-8 justify-center items-center absolute inset-1/4">
+      <div class="font-bold text-[75px] text-center" id="welcome"></div>
+      <div>
+        <a href="">
+          <span id="btn-label">VISITER</span>
+          <div id="btn-style"></div>
+        </a>
+      </div>
       <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
       <script>
-        var typed = new Typed("#welcome", {
+        var welcome = new Typed("#welcome", {
           strings: [
             '<span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-green-400">WELCOME</span> To Menabe !',
             '<span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-green-400">BIENVENUE</span> à Menabe !',
@@ -33,7 +47,12 @@
           showCursor: false,
           loop: true,
         });
+        
       </script>
     </div>
   </body>
 </html>
+
+<script>
+  AOS.init();
+</script>
