@@ -36,8 +36,7 @@ a #btn-style{
     left: 0;
     width: 200px;
     height: 200px;
-    background: #c7ffc5;
-    box-shadow: inset 0 0 50px rgba(255, 255, 255, 0.5);
+    background: #bf9576;
     transition: 0.5s;
 }
 a #btn-style:before, a #btn-style:after{
