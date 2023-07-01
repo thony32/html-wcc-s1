@@ -1,0 +1,65 @@
+<!-- <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" zoomAndPan="magnify" viewBox="0 0 1440 697.499984" height="930" preserveAspectRatio="xMidYMid meet" version="1.0"><defs><g/></defs><g fill="#d49848" fill-opacity="1"><g transform="translate(415.103055, 379.602859)"><g><path d="M 5.128906 0 L 21.667969 0 L 21.667969 -53.695312 L 55.054688 0 L 67.511719 0 L 100.796875 -53.695312 L 100.796875 0 L 117.335938 0 L 117.335938 -73.269531 L 94.097656 -73.269531 L 61.230469 -19.15625 L 28.367188 -73.269531 L 5.128906 -73.269531 Z M 5.128906 0 "/></g></g></g><g fill="#d49848" fill-opacity="1"><g transform="translate(537.563666, 379.602859)"><g><path d="M 5.128906 0 L 82.585938 0 L 82.585938 -13.292969 L 21.667969 -13.292969 L 21.667969 -30.355469 L 82.585938 -30.355469 L 82.585938 -42.914062 L 21.667969 -42.914062 L 21.667969 -59.976562 L 82.585938 -59.976562 L 82.585938 -73.269531 L 5.128906 -73.269531 Z M 5.128906 0 "/></g></g></g><g fill="#d49848" fill-opacity="1"><g transform="translate(624.228102, 379.602859)"><g><path d="M 5.128906 0 L 21.667969 0 L 21.667969 -56.3125 L 76.722656 0 L 99.542969 0 L 99.542969 -73.269531 L 83.003906 -73.269531 L 83.003906 -16.957031 L 28.050781 -73.269531 L 5.128906 -73.269531 Z M 5.128906 0 "/></g></g></g><g fill="#d49848" fill-opacity="1"><g transform="translate(728.895298, 379.602859)"><g><path d="M 4.082031 0 L 22.398438 0 L 31.296875 -16.222656 L 77.980469 -16.222656 L 86.875 0 L 105.191406 0 L 65.3125 -73.269531 L 43.960938 -73.269531 Z M 37.679688 -28.992188 L 54.636719 -59.765625 L 71.59375 -28.992188 Z M 37.679688 -28.992188 "/></g></g></g><g fill="#d49848" fill-opacity="1"><g transform="translate(838.167843, 379.602859)"><g><path d="M 5.128906 0 L 72.117188 0 C 88.761719 0 95.980469 -8.898438 95.980469 -21.246094 C 95.980469 -30.039062 92.109375 -35.902344 85.726562 -39.460938 C 89.597656 -43.4375 91.480469 -48.566406 91.480469 -53.90625 C 91.480469 -64.582031 86.351562 -73.269531 69.710938 -73.269531 L 5.128906 -73.269531 Z M 21.667969 -43.753906 L 21.667969 -60.8125 L 64.371094 -60.8125 C 70.128906 -60.8125 74.945312 -60.8125 74.945312 -52.230469 C 74.945312 -43.753906 70.128906 -43.753906 64.371094 -43.753906 Z M 21.667969 -13.082031 L 21.667969 -30.667969 L 68.769531 -30.667969 C 74.523438 -30.667969 79.445312 -30.667969 79.445312 -21.875 C 79.445312 -13.082031 74.523438 -13.082031 68.769531 -13.082031 Z M 21.667969 -13.082031 "/></g></g></g><g fill="#d49848" fill-opacity="1"><g transform="translate(938.229668, 379.602859)"><g><path d="M 5.128906 0 L 82.585938 0 L 82.585938 -13.292969 L 21.667969 -13.292969 L 21.667969 -30.355469 L 82.585938 -30.355469 L 82.585938 -42.914062 L 21.667969 -42.914062 L 21.667969 -59.976562 L 82.585938 -59.976562 L 82.585938 -73.269531 L 5.128906 -73.269531 Z M 5.128906 0 "/></g></g></g></svg> -->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" zoomAndPan="magnify" viewBox="0 0 1440 697.499984" height="930" preserveAspectRatio="xMidYMid meet" version="1.0">
+  <defs>
+    <g />
+  </defs>
+  <g fill="#d49848" fill-opacity="1">
+    <g transform="translate(415.103055, 379.602859)">
+      <g>
+        <text>
+          <tspan x="5.128906" y="0" class="animated-bounce">M</tspan>
+          <tspan x="21.667969" y="-53.695312" class="animated-bounce" dy="1em">E</tspan>
+          <tspan x="55.054688" y="0" class="animated-bounce">N</tspan>
+          <tspan x="100.796875" y="-53.695312" class="animated-bounce" dy="1em">A</tspan>
+          <tspan x="117.335938" y="0" class="animated-bounce">B</tspan>
+          <tspan x="21.667969" y="-73.269531" class="animated-bounce" dy="1em">E</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>
+
+<style>
+  @keyframes bounce {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  .animated-bounce {
+    animation-name: bounce;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  }
+
+  .animated-bounce:nth-child(1) {
+    animation-delay: 0s;
+  }
+
+  .animated-bounce:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+
+  .animated-bounce:nth-child(3) {
+    animation-delay: 0.4s;
+  }
+
+  .animated-bounce:nth-child(4) {
+    animation-delay: 0.6s;
+  }
+
+  .animated-bounce:nth-child(5) {
+    animation-delay: 0.8s;
+  }
+
+  .animated-bounce:nth-child(6) {
+    animation-delay: 1s;
+  }
+</style>

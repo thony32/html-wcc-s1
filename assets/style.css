@@ -28,6 +28,7 @@ a span{
     padding-left: 8px;
     font-weight: bold;
     font-family: 'Quicksand', sans-serif;
+    
 }
 
 a #btn-style{
@@ -52,7 +53,7 @@ a #btn-style:before, a #btn-style:after{
 }
 a #btn-style:before{
     border-radius: 50%;
-    background: rgb(255, 255, 255);
+    background: #e4dcd5;
     animation: animate 5s linear infinite;
 }
 a #btn-style:after{
