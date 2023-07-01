@@ -1,0 +1,31 @@
+@keyframes animateBackground {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-100%);
+    }
+  }
+  
+  #loader {
+    animation-name: animateBackground;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+  }
+  
+  #loader-svg {
+    opacity: 1;
+    transition: opacity 1s;
+  }
+  
+  #cover {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 1s;
+  }
+  
+  .show-cover {
+    opacity: 1;
+  }
+  

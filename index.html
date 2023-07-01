@@ -1,36 +1,75 @@
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Faritra Menabe</title>
+  <link rel="stylesheet" href="./dist/daisyUI.css" />
+  <script src="./dist/tailwind.js"></script>
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  <link rel="stylesheet" href="assets/style.css">
 
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Faritra Menabe</title>
-    <link rel="stylesheet" href="./dist/daisyUI.css" />
-    <script src="./dist/tailwind.js"></script>
-    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+</head>
 
-  </head>
-  <body class="h-[100vh]">
-    <!-- panel 1 -->
-    <!-- <div>
-      <h1>Test</h1>
-    </div> -->
+<body class="h-[100vh] overflow-hidden">
 
-    <!-- panel 2 -->
-    
-        <div class="absolute inset-0 flex items-center justify-center">
-          <img src="./img/33.png" alt="" class="w-full h-screen" />
-        </div>
-        <div class=" absolute inset-1/4 z-10">
-          <h1 class="font-bold text-4xl text-center bg-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-green-400" id="welcome"></h1>
-          <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-          <script> 
-            var typed = new Typed("#welcome", {
-              strings: ['WELCOME To Menabe !', 'BIENVENUE à Menabe !', 'TONGASOA eto Menabe !'],
-              typeSpeed: 100,
-            });
-          </script>
-        </div>
+<div id="loader" class="fixed left-0 top-0 right-0 bottom-0 bg-[#B87A4E] flex items-center justify-center z-50">
+  <img src="img/load.svg" alt="">
+</div>
+  
+ 
+  <!-- panel 1 -->
+  <div class="navbar bg-base-100">
+    <div class="navbar-start">
+      <div class="dropdown">
+        <label tabindex="0" class="btn btn-ghost lg:hidden">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+        </label>
+        <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+          <li><a>Item 1</a></li>
+          <li>
+            <a>Parent</a>
+            <ul class="p-2">
+              <li><a>Submenu 1</a></li>
+              <li><a>Submenu 2</a></li>
+            </ul>
+          </li>
+          <li><a>Item 3</a></li>
+        </ul>
+      </div>
+      <a class="btn btn-ghost normal-case text-xl">daisyUI</a>
+    </div>
+    <div class="navbar-center hidden lg:flex">
+      <ul class="menu menu-horizontal px-1">
+        <li><a>Item 1</a></li>
+        <li tabindex="0">
+          <details>
+            <summary>Parent</summary>
+            <ul class="p-2">
+              <li><a>Submenu 1</a></li>
+              <li><a>Submenu 2</a></li>
+            </ul>
+          </details>
+        </li>
+        <li><a>Item 3</a></li>
+      </ul>
+    </div>
+    <div class="navbar-end">
+      <a class="btn rounded-full">Button</a>
+    </div>
+  </div>
+
+  <div class="grid sm:grid-cols-2 gird-cols-2">
+    <div class="flex justify-center items-center">
+      <div>
+        <h1 class="text-4xl">Menabe</h1>
       </div>
     </div>
-  </body>
+    <div class="flex justify-ends">
+      <img class=" h-96 w-96 sm:h-screen sm:w-full" src="img/___3_-removebg-preview.png" alt="">
+    </div>
+  </div>
+
+
+  <script src="js/app.js"></script>
+</body>
+
 </html>
->>>>>>> f21d62526444ad5f9cff8419d7ed45a2f57c3d24
