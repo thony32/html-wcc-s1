@@ -36,11 +36,11 @@ const btnSurprise = document.getElementById("btn-surprise");
 
   btnLight.addEventListener("click", function () {
     body.classList.add("bg-white");
-    body.classList.remove("bg-gray-700");
+    body.classList.remove("bg-gray-500");
     sun.classList.remove("!translate-y-[50%]");
   });
   btnDark.addEventListener("click", function () {
     body.classList.remove("bg-white");
-    body.classList.add("bg-gray-700");
+    body.classList.add("bg-gray-500");
     sun.classList.add("!translate-y-[50%]");
   });
