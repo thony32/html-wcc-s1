@@ -8,11 +8,19 @@
     <link href="https://fonts.cdnfonts.com/css/quicksand" rel="stylesheet" />
     <link rel="stylesheet" href="./dist/daisyUI.css" />
     <script src="./dist/tailwind.js"></script>
-    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </head>
+
   <body class="h-[100vh] relative duration-[1500ms]" id="body">
+    <div
+      id="loader"
+      class="fixed left-0 top-0 right-0 bottom-0 bg-[#b07b53] flex flex-col items-center justify-center z-50"
+    >
+      <img src="img/load.svg" class="w-[150px]" alt="" />
+      <img src="img/Menabe.svg" class="w-[500px]" />
+    </div>
+
     <div class="overflow-x-hidden">
       <!-- warning -->
       <svg class="h-screen" zoomAndPan="magnify" viewBox="0 0 1440 697.499984">
@@ -313,20 +321,20 @@
         </g>
       </svg>
     </div>
-
     <div class="h-screen w-full absolute top-0">
-      <div class="grid grid-cols-2">
+      <div class="lg:grid lg:grid-cols-2 flex flex-row-reverse">
         <div
           id="left-content"
           class="h-screen flex justify-center items-center opacity-0 duration-500"
         >
-          <div class="w-3/4 space-y-4">
+          <div class="w-1/2 space-y-4">
             <div>
-              <h1 class="text-6xl font-semibold">A propos de MENABE</h1>
+              <h1 class="text-6xl font-semibold">A propos de Menabe</h1>
             </div>
             <div class="text-3xl first-letter:text-4xl">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi,
-              cumque sit.
+              Le Menabe est l'une des vingt-trois régions de Madagascar. Elle
+              est située dans la province de Toliara, dans le sud-ouest de
+              l'île.
             </div>
             <div>
               <button
@@ -340,15 +348,14 @@
         </div>
         <div
           id="right-content"
-          class="h-screen flex justify-center items-center -translate-y-[10%] duration-500"
+          class="h-screen flex justify-center items-center -translate-y-[10%] duration-500 "
         >
-          <div class="w-2/3 space-y-5">
-            <!-- <div class="font-bold text-[75px] text-center h-[100px]" id="welcome"></div> -->
+          <div class="w-1/2 space-y-5">
             <div>
               <h1
-                class="text-5xl first-letter:text-7xl font-bold first-letter:text-yellow-900"
+                class="text-5xl first-letter:text-7xl font-bold text-yellow-900"
               >
-                Bienvenue dans la région de
+                Bienvenue dans la region de
                 <label class="text-7xl">MENABE</label>
               </h1>
             </div>
@@ -357,7 +364,7 @@
                 id="btn-surprise"
                 class="btn bg-yellow-800 border-yellow-800 hover:bg-yellow-800 hover:border-yellow-800"
               >
-                En savoir plus
+                Clique moi
               </button>
             </div>
           </div>
@@ -395,23 +402,12 @@
           />
         </svg>
       </div>
+
+      
     </div>
   </body>
 </html>
 
-<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-<script>
-  var welcome = new Typed("#welcome", {
-    strings: [
-      '<span class="text-transparent bg-clip-text bg-gradient-to-r from-[#b07b53] to-[#ccaa91]">WELCOME</span> To Menabe !',
-      '<span class="text-transparent bg-clip-text bg-gradient-to-r from-[#b07b53] to-[#ccaa91]">BIENVENUE</span> à Menabe !',
-      '<span class="text-transparent bg-clip-text bg-gradient-to-r from-[#b07b53] to-[#ccaa91]">TONGASOA</span> eto Menabe !',
-    ],
-    typeSpeed: 200,
-    showCursor: false,
-    loop: true,
-  });
-</script>
 <script>
   AOS.init();
 </script>
@@ -456,3 +452,5 @@
     sun.classList.add("!translate-y-[50%]");
   });
 </script>
+
+<script src="js/app.js"></script>
