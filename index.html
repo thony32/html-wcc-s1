@@ -21,8 +21,8 @@
       <img src="img/Menabe.svg" class="w-[500px]" />
     </div>
 
+    <!-- Baobab Background -->
     <div class="overflow-x-hidden">
-      <!-- warning -->
       <svg class="h-screen" zoomAndPan="magnify" viewBox="0 0 1440 697.499984">
         <g id="sun" class="translate-x-0 translate-y-0 duration-[1500ms]">
           <path
@@ -321,20 +321,25 @@
         </g>
       </svg>
     </div>
+
+
+    <!-- content -->
     <div class="h-screen w-full absolute top-0">
-      <div class="lg:grid lg:grid-cols-2 flex flex-row-reverse">
+      <div class="xl:grid xl:grid-cols-2 flex flex-row-reverse">
+
+        <!-- left-content -->
         <div
           id="left-content"
           class="h-screen flex justify-center items-center opacity-0 duration-500"
         >
           <div class="w-1/2 space-y-4">
             <div>
-              <h1 class="text-6xl font-semibold">A propos de Menabe</h1>
+              <h1 class="text-2xl md:text-3xl lg:text-5xl font-bold">A propos de MENABE</h1>
             </div>
-            <div class="text-3xl first-letter:text-4xl">
-              Le Menabe est l'une des vingt-trois régions de Madagascar. Elle
-              est située dans la province de Toliara, dans le sud-ouest de
-              l'île.
+            <div class="md:text-2xl lg:text-3xl first-letter:text-4xl">
+              Le 'Menabe' est l'une des vingt-trois régions de Madagascar. Elle
+              est située dans la province de Toliara, dans le Sud-Ouest de
+              l'Île.
             </div>
             <div>
               <button
@@ -346,17 +351,19 @@
             </div>
           </div>
         </div>
+
+        <!-- Right content -->
         <div
           id="right-content"
-          class="h-screen flex justify-center items-center -translate-y-[10%] duration-500 "
+          class="h-screen flex justify-center items-center -translate-y-[10%] duration-500"
         >
-          <div class="w-1/2 space-y-5">
+          <div class="w-1/2 space-y-3 md:space-y-5">
             <div>
               <h1
-                class="text-5xl first-letter:text-7xl font-bold text-yellow-900"
+                class="lg:text-5xl md:text-4xl text-3xl md:first-letter:text-5xl lg:first-letter:text-6xl first-letter:text-4xl font-bold text-yellow-900 "
               >
-                Bienvenue dans la region de
-                <label class="text-7xl">MENABE</label>
+                Bienvenue dans la région de
+                <label class="text-4xl lg:text-6xl">MENABE !</label>
               </h1>
             </div>
             <div>
@@ -364,7 +371,7 @@
                 id="btn-surprise"
                 class="btn bg-yellow-800 border-yellow-800 hover:bg-yellow-800 hover:border-yellow-800"
               >
-                Clique moi
+                En  Savoir  plus
               </button>
             </div>
           </div>
@@ -373,7 +380,7 @@
     </div>
 
     <!-- btn theme -->
-    <div class="absolute top-0 right-0 m-3">
+    <div class="absolute top-0 lg:left-0 m-3" id="themes">
       <div class="flex gap-2">
         <svg
           id="btn-light"
@@ -402,8 +409,6 @@
           />
         </svg>
       </div>
-
-      
     </div>
   </body>
 </html>
@@ -411,46 +416,6 @@
 <script>
   AOS.init();
 </script>
-<script>
-  const btnSuprise = document.getElementById("btn-surprise");
-  const btnBack = document.getElementById("btn-back");
-  const baobab = document.getElementById("baobab");
-  const sun = document.getElementById("sun");
-  const btnLight = document.getElementById("btn-light");
-  const btnDark = document.getElementById("btn-dark");
-
-  const leftContent = document.getElementById("left-content");
-  const rightContent = document.getElementById("right-content");
-  const body = document.getElementById("body");
-
-  btnSuprise.addEventListener("click", function () {
-    baobab.classList.add("translate-x-[40%]");
-    leftContent.classList.remove("opacity-0");
-    rightContent.classList.add("opacity-0");
-    sun.classList.add("-translate-x-[30%]");
-    sun.classList.add("translate-y-[10%]");
-  });
-
-  btnBack.addEventListener("click", function () {
-    baobab.classList.remove("translate-x-[40%]");
-    rightContent.classList.remove("opacity-0");
-    leftContent.classList.add("opacity-0");
-    sun.classList.remove("-translate-x-[30%]");
-    sun.classList.remove("translate-y-[10%]");
-  });
-
-  // * change sky color
-
-  btnLight.addEventListener("click", function () {
-    body.classList.add("bg-white");
-    body.classList.remove("bg-gray-700");
-    sun.classList.remove("!translate-y-[50%]");
-  });
-  btnDark.addEventListener("click", function () {
-    body.classList.remove("bg-white");
-    body.classList.add("bg-gray-700");
-    sun.classList.add("!translate-y-[50%]");
-  });
+<script src="./js/animation.js">
 </script>
-
-<script src="js/app.js"></script>
+<script src="js/loading.js"></script>
