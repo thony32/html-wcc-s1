@@ -1,31 +1,71 @@
-@keyframes animateBackground {
-    0% {
-      transform: translateY(0);
-    }
-    100% {
-      transform: translateY(-100%);
-    }
+@import url("https://fonts.cdnfonts.com/css/quicksand");
+#welcome {
+  font-family: "Quicksand", sans-serif;
+}
+a {
+  position: relative;
+  padding: 30px 50px;
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 200px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+a:hover #btn-style {
+  top: -120px;
+}
+a span {
+  position: relative;
+  z-index: 20;
+  color: rgb(0, 0, 0);
+  font-size: 15px;
+  letter-spacing: 5px;
+  text-align: center;
+  padding-left: 8px;
+  font-weight: bold;
+  font-family: "Quicksand", sans-serif;
+}
+
+a #btn-style {
+  position: absolute;
+  top: -80px;
+  left: 0;
+  width: 200px;
+  height: 200px;
+  background: #bf9576;
+  transition: 0.5s;
+}
+a #btn-style:before,
+a #btn-style:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 200%;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -75%);
+}
+a #btn-style:before {
+  border-radius: 50%;
+  background: rgb(255, 255, 255);
+  animation: animate 5s linear infinite;
+}
+a #btn-style:after {
+  border-radius: 45%;
+  background: rgba(255, 255, 255, 0.5);
+  animation: animate 10s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    transform: translate(-50%, -75%) rotate(0deg);
   }
-  
-  #loader {
-    animation-name: animateBackground;
-    animation-duration: 4s;
-    animation-fill-mode: forwards;
-    animation-delay: 1s;
+  100% {
+    transform: translate(-50%, -75%) rotate(360deg);
   }
-  
-  #loader-svg {
-    opacity: 1;
-    transition: opacity 1s;
-  }
-  
-  #cover {
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 1s;
-  }
-  
-  .show-cover {
-    opacity: 1;
-  }
-  
+}
+
