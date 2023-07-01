@@ -13,6 +13,12 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </head>
   <body class="h-[100vh] relative duration-[1500ms]" id="body">
+    <div id="loader" class="fixed left-0 top-0 right-0 bottom-0 bg-white flex items-center justify-center z-50">
+      <div>
+        <img  src="img/load.svg" alt="">
+      </div>
+    </div>
+    
     <div class="overflow-x-hidden">
       <!-- warning -->
       <svg class="h-screen" zoomAndPan="magnify" viewBox="0 0 1440 697.499984">
@@ -460,4 +466,6 @@
     sun.classList.add("!translate-y-[50%]");
   });
 </script>
+
+<script src="js/app.js"></script>
 

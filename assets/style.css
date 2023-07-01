@@ -69,3 +69,28 @@ a #btn-style:after {
   }
 }
 
+@keyframes animateBackground {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+#loader {
+  animation-name: animateBackground;
+  animation-duration: 4s; /* Longer duration */
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin {
+  animation: spin 1s linear infinite;
+}
