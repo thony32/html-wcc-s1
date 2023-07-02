@@ -1,0 +1,98 @@
+@import url("https://fonts.cdnfonts.com/css/quicksand");
+#welcome {
+  font-family: "Quicksand", sans-serif;
+}
+
+#about {
+  font-family: "Quicksand", sans-serif;
+}
+
+
+a #btn-style {
+  position: absolute;
+  top: -80px;
+  left: 0;
+  width: 200px;
+  height: 200px;
+  background: #bf9576;
+  transition: 0.5s;
+}
+a #btn-style:before,
+a #btn-style:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 200%;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -75%);
+}
+a #btn-style:before {
+  border-radius: 50%;
+  background: rgb(255, 255, 255);
+  animation: animate 5s linear infinite;
+}
+a #btn-style:after {
+  border-radius: 45%;
+  background: rgba(255, 255, 255, 0.5);
+  animation: animate 10s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    transform: translate(-50%, -75%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -75%) rotate(360deg);
+  }
+}
+
+@keyframes animateBackground {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+#loader {
+  animation-name: animateBackground;
+  animation-duration: 4s; /* Longer duration */
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin {
+  animation: spin 1s linear infinite;
+}
+.bird {
+  fill: #2c1f15;
+}
+
+#wings {
+  animation: 1s flying linear infinite alternate;
+}
+
+@keyframes flying {
+  0% {
+    d: path("M 5 5 Q 25 0 50 15 L 50 25 Q 25 5 5 5 M 95 5 Q 75 0 50 15 L 50 25 Q 75 5 95 5");
+  }
+  
+  50% {
+    d: path("M 5 10 Q 25 5 50 15 L 50 25 Q 25 10 5 10 M 95 10 Q 75 5 50 15 L 50 25 Q 75 10 95 10");
+  }
+ 
+  100% {
+    d: path("M 7 30 Q 25 25 50 15 L 50 25 Q 25 30 7 30 M 93 30 Q 75 25 50 15 L 50 25 Q 75 30 93 30");
+  }
+}
+
