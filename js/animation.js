@@ -18,8 +18,8 @@ const btnSurprise = document.getElementById("btn-surprise");
     rightContent.classList.add("opacity-0");
     sun.classList.add("-translate-x-[30%]");
     sun.classList.add("translate-y-[10%]");
-    themes.classList.add("right-0");
-    themes.classList.remove("left-0");
+    // themes.classList.add("right-0");
+    // themes.classList.remove("left-0");
   });
 
   btnBack.addEventListener("click", function () {
@@ -29,8 +29,8 @@ const btnSurprise = document.getElementById("btn-surprise");
     leftContent.classList.add("opacity-0");
     sun.classList.remove("-translate-x-[30%]");
     sun.classList.remove("translate-y-[10%]");
-    themes.classList.remove("right-0");
-    themes.classList.add("left-0");
+    // themes.classList.remove("right-0");
+    // themes.classList.add("left-0");
   });
 
   // * change sky color
