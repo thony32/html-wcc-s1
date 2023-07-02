@@ -22,10 +22,8 @@
       <img src="img/Menabe.svg" class="w-[500px]" />
     </div>
     
-
-
     <!-- Baobab Background -->
-    <div class="overflow-x-hidden">
+    <div class="overflow-x-hidden"> 
       <svg class="h-screen " zoomAndPan="magnify" viewBox="0 0 1440 697.499984">
         <g id="sun" class="translate-x-0 translate-y-0 duration-[1500ms]">
           <path
@@ -328,13 +326,19 @@
     <!-- content -->
     <div class="h-screen w-full absolute top-0">
       <div class="xl:grid xl:grid-cols-2 flex flex-row-reverse">
+        
         <!-- left-content -->
         <div
           id="left-content"
-          class="h-screen flex justify-center items-center opacity-0 duration-500"
-        >
-          <div class="w-1/2 space-y-4">
+          class="h-screen flex justify-center items-center opacity-0 duration-500">
+          <div class="w-1/2 space-y-2">
             <div>
+              <svg class="bird hidden md:block lg:block">
+                <g>
+                  <path id="wings" d="M 5 10 Q 25 5 50 15 L 50 25 Q 25 10 5 10 M 95 10 Q 75 5 50 15 L 50 25 Q 75 10 95 10"/>
+                </g>  
+              </svg>  
+                        
               <h1 class="text-xl md:text-5xl xl:text-4xl 2xl:text-7xl font-bold">
                 A propos de MENABE
               </h1>
@@ -362,6 +366,12 @@
         >
           <div class="w-1/2 space-y-3 md:space-y-5">
             <div>
+              <svg class="bird hidden md:block lg:block">
+                <g>
+                  <path id="wings" d="M 5 10 Q 25 5 50 15 L 50 25 Q 25 10 5 10 M 95 10 Q 75 5 50 15 L 50 25 Q 75 10 95 10"/>
+                </g>  
+              </svg>  
+                        
               <h1
                 class="lg:text-5xl md:text-4xl text-4xl md:first-letter:text-5xl lg:first-letter:text-6xl first-letter:text-4xl font-bold text-yellow-900" id="welcome"
               >
@@ -413,6 +423,7 @@
         </svg>
       </div>
     </div>
+
   </body>
 </html>
 

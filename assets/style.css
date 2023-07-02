@@ -95,3 +95,24 @@ a #btn-style:after {
 .animate-spin {
   animation: spin 1s linear infinite;
 }
+.bird {
+  fill: #2c1f15;
+}
+
+#wings {
+  animation: 1s flying linear infinite alternate;
+}
+
+@keyframes flying {
+  0% {
+    d: path("M 5 5 Q 25 0 50 15 L 50 25 Q 25 5 5 5 M 95 5 Q 75 0 50 15 L 50 25 Q 75 5 95 5");
+  }
+  
+  50% {
+    d: path("M 5 10 Q 25 5 50 15 L 50 25 Q 25 10 5 10 M 95 10 Q 75 5 50 15 L 50 25 Q 75 10 95 10");
+  }
+ 
+  100% {
+    d: path("M 7 30 Q 25 25 50 15 L 50 25 Q 25 30 7 30 M 93 30 Q 75 25 50 15 L 50 25 Q 75 30 93 30");
+  }
+}
