@@ -5,7 +5,8 @@ const btnSurprise = document.getElementById("btn-surprise");
   const btnLight = document.getElementById("btn-light");
   const btnDark = document.getElementById("btn-dark");
   const themes = document.getElementById("themes");
-
+  const btnThird = document.getElementById("third-content");
+  const btnSecond = document.getElementById("btn-second");
   const leftContent = document.getElementById("left-content");
   const rightContent = document.getElementById("right-content");
   const body = document.getElementById("body");
