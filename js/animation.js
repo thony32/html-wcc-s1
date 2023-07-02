@@ -5,8 +5,8 @@ const btnSurprise = document.getElementById("btn-surprise");
   const btnLight = document.getElementById("btn-light");
   const btnDark = document.getElementById("btn-dark");
   const themes = document.getElementById("themes");
-  const btnThird = document.getElementById("nav-surprise");
-  const btnSecond = document.getElementById("nav-back");
+  // const btnThird = document.getElementById("nav-surprise");
+  // const btnSecond = document.getElementById("nav-back");
   const leftContent = document.getElementById("left-content");
   const rightContent = document.getElementById("right-content");
   const body = document.getElementById("body");
@@ -22,27 +22,6 @@ const btnSurprise = document.getElementById("btn-surprise");
     // themes.classList.remove("left-0");
   });
 
-  btnThird.addEventListener("click", function () {
-    baobab.classList.add("xl:translate-x-[40%]");
-    baobab.classList.add("-translate-x-[35%]");
-    leftContent.classList.remove("opacity-0");
-    rightContent.classList.add("opacity-0");
-    sun.classList.add("-translate-x-[30%]");
-    sun.classList.add("translate-y-[10%]");
-    // themes.classList.add("right-0");
-    // themes.classList.remove("left-0");
-  });
-
-  btnSecond.addEventListener("click", function () {
-    baobab.classList.remove("xl:translate-x-[40%]");
-    baobab.classList.remove("-translate-x-[35%]");
-    rightContent.classList.remove("opacity-0");
-    leftContent.classList.add("opacity-0");
-    sun.classList.remove("-translate-x-[30%]");
-    sun.classList.remove("translate-y-[10%]");
-    // themes.classList.remove("right-0");
-    // themes.classList.add("left-0");
-  });
 
 
   btnBack.addEventListener("click", function () {

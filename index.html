@@ -13,7 +13,7 @@
     <link rel="icon" href="img/logo.ico" type="image/x-icon" />
   </head>
 
-  <body class="h-[100vh] relative duration-[1500ms]" id="body">
+  <body class="h-[100vh] relative duration-[1500ms] overflow-hidden" id="body">
     <div
       id="loader"
       class="fixed left-0 top-0 right-0 bottom-0 bg-[#b07b53] flex flex-col items-center justify-center z-50"
@@ -324,10 +324,10 @@
     </div>
 
     <!-- content -->
-    <div class="h-screen w-screen overflow-x-hidden absolute top-0">
+    <div class="h-screen w-screen overflow-hidden absolute top-0">
       <!-- content-header -->
       <header class="w-screen z-30">
-        <div class="navbar">
+        <div class="navbar ">
           <div class="navbar-start">
 
           <div class="dropdown">
@@ -340,7 +340,7 @@
             </ul>
           </div>
         </div>
-          <div class="navbar-end hidden lg:flex">
+          <div class="navbar-end hidden lg:flex ">
 
             <div class="menu menu-horizontal px-1 text-xl ml-60 space-x-4">
               <div class="p-2" >Fandraisana</div>
@@ -356,7 +356,7 @@
         <!-- left-content -->
         <div
           id="left-content"
-          class="h-screen flex justify-center items-center opacity-0 duration-500"
+          class="h-screen flex justify-center items-center opacity-0 duration-500 "
         >
           <div class="w-1/2 space-y-2">
             <div>
